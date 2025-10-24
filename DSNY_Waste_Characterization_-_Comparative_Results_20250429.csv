@@ -1,0 +1,522 @@
+Year,Material Group,Comparative Category,DSNY Diversion Summary Category,Aggregate Percent,Refuse Percent,"MGP (Metal, Glass, Plastic) Percent",Paper Percent,Organics Percent,"Generator 
+(Residential, Schools, NYCHA)"
+2023,Paper,Newspaper,Designated Paper,0.80%,0.005,0.40%,4.80%,0.00%,Residential
+2023,Paper,Plain OCC/Kraft Paper,Designated Paper,7.20%,0.022,2.80%,56.60%,0.20%,Residential
+2023,Paper,High Grade Paper,Designated Paper,0.40%,0.003,0.10%,1.30%,0.00%,Residential
+2023,Paper,Mixed Low Grade Paper,Designated Paper,7.40%,0.062,3.30%,22.50%,0.20%,Residential
+2023,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,9.00%,0.105,2.40%,2.90%,0.80%,Residential
+2023,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),1.70%,0.018,0.90%,1.40%,0.10%,Residential
+2023,Paper,Paper Beverage Cartons/Aseptic Boxes,Designated MGP,0.40%,0.003,1.60%,0.40%,0.00%,Residential
+2023,Plastic,#1 PET Bottles,Designated MGP,1.60%,0.011,6.60%,0.40%,0.00%,Residential
+2023,Plastic,#2 HDPE Natural Bottles,Designated MGP,0.40%,0.002,2.40%,0.10%,0.00%,Residential
+2023,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,0.50%,0.003,3.30%,0.20%,0.00%,Residential
+2023,Plastic,Other Plastic Bottles,Designated MGP,0.10%,0.001,0.40%,0.00%,0.00%,Residential
+2023,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),2.50%,0.021,7.60%,0.60%,0.10%,Residential
+2023,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),1.60%,0.013,5.30%,0.40%,0.00%,Residential
+2023,Plastic,#6 EPS Containers/Packaging (including Single Use),Other (Non-Divertable),0.30%,0.004,0.10%,0.10%,0.10%,Residential
+2023,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),0.60%,0.008,0.30%,0.10%,0.10%,Residential
+2023,Plastic,Film Plastic: Other,Other (Non-Divertable),6.40%,0.071,4.70%,2.10%,1.60%,Residential
+2023,Plastic,Single Use Plastic Plates/Cups/Cutlery (excluding EPS),Designated MGP (after 2013 WCS),0.80%,0.009,0.90%,0.10%,0.00%,Residential
+2023,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),0.20%,0.001,1.10%,0.10%,0.00%,Residential
+2023,Glass,Clear Container Glass,Designated MGP,1.70%,0.009,9.90%,0.50%,0.00%,Residential
+2023,Glass,Green Container Glass,Designated MGP,1.00%,0.003,7.40%,0.30%,0.00%,Residential
+2023,Glass,Brown Container Glass,Designated MGP,0.30%,0.002,1.70%,0.10%,0.00%,Residential
+2023,Glass,Other Color Container Glass,Designated MGP,0.10%,0,0.40%,0.00%,0.00%,Residential
+2023,Glass,Mixed Cullet,Designated MGP,1.20%,0.005,7.90%,0.20%,0.00%,Residential
+2023,Glass,Other Glass,Designated MGP,0.30%,0.003,0.90%,0.10%,0.00%,Residential
+2023,Metal,Aluminum Cans,Designated MGP,0.30%,0.003,0.80%,0.10%,0.00%,Residential
+2023,Metal,Aluminum Foil/Containers,Designated MGP,0.90%,0.009,1.00%,0.10%,0.00%,Residential
+2023,Metal,Other Aluminum,Designated MGP,0.10%,0.001,0.10%,0.00%,0.00%,Residential
+2023,Metal,Other Non-Ferrous,Designated MGP,0.20%,0.001,0.50%,0.00%,0.00%,Residential
+2023,Metal,Steel/Tin Food Cans,Designated MGP,0.80%,0.005,4.10%,0.20%,0.00%,Residential
+2023,Metal,Empty Aerosol Cans,Designated MGP,0.20%,0.002,0.60%,0.00%,0.00%,Residential
+2023,Metal,Other Ferrous,Designated MGP,0.80%,0.005,3.90%,0.30%,0.00%,Residential
+2023,Metal,Mixed Metals,Designated MGP,0.60%,0.004,2.60%,0.20%,0.00%,Residential
+2023,Metal,Appliances: Ferrous,Designated MGP,0.20%,0.001,1.30%,0.00%,0.00%,Residential
+2023,Metal,Appliances: Non-Ferrous,Designated MGP,0.00%,0,0.30%,0.00%,0.00%,Residential
+2023,Organics,Yard Waste,Organics Suitable for Composting,5.70%,0.068,0.20%,0.30%,77.20%,Residential
+2023,Organics,Food,Organics Suitable for Composting,21.10%,0.253,3.90%,1.10%,18.00%,Residential
+2023,Organics,Non-C&D Wood,Other (Non-Divertable),0.50%,0.006,0.30%,0.10%,0.10%,Residential
+2023,Organics,Textiles: Non-Clothing,Textiles,2.10%,0.025,0.40%,0.20%,0.10%,Residential
+2023,Organics,Textiles: Clothing,Textiles,1.90%,0.023,0.20%,0.30%,0.00%,Residential
+2023,Organics,Carpet/Upholstery,Other (Non-Divertable),0.70%,0.009,0.00%,0.00%,0.00%,Residential
+2023,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),4.70%,0.057,0.30%,0.20%,0.20%,Residential
+2023,Organics,Animal By-Products,Other (Non-Divertable),1.90%,0.023,0.20%,0.10%,0.10%,Residential
+2023,Organics,Shoes/Rubber/Leather,Textiles,1.00%,0.011,0.40%,0.10%,0.00%,Residential
+2023,Organics,Fines,Other (Non-Divertable),3.10%,0.034,3.40%,0.50%,0.30%,Residential
+2023,Organics,Miscellaneous Organics,Other (Non-Divertable),1.10%,0.013,0.10%,0.10%,0.50%,Residential
+2023,E-Waste,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,0.40%,0.004,1.10%,0.10%,0.00%,Residential
+2023,E-Waste,Computer Monitors,E-Waste,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,E-Waste,Televisions,E-Waste,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,E-Waste,Other Computer Equipment,E-Waste,0.10%,0.001,0.10%,0.00%,0.00%,Residential
+2023,Construction & Demolition,Untreated Dimensional Lumber/Pallets/Crates,C&D,0.40%,0.005,0.00%,0.10%,0.00%,Residential
+2023,Construction & Demolition,Treated/Contaminated Wood,C&D,0.90%,0.011,0.10%,0.10%,0.00%,Residential
+2023,Construction & Demolition,Other C&D Debris Not Elsewhere Classified,C&D,1.90%,0.023,0.50%,0.10%,0.00%,Residential
+2023,Miscellaneous Inorganics,Miscellaneous Inorganics,Other,1.40%,0.015,0.90%,0.40%,0.00%,Residential
+2023,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Oil Filters,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Antifreeze,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Wet-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Dry-Cell Batteries,HHW,0.00%,0,0.10%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Latex Paints/Water-Based Adhesives/Glues,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Oil-Based Paint/Solvent,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Mercury-Laden Wastes,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Compressed Gas Cylinders/Fire Extinguishers,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2023,Harmful Household Products,Home Medical Products,HHW,0.20%,0.002,0.10%,0.10%,0.00%,Residential
+2023,Harmful Household Products,Other Potentially Harmful Wastes,HHW,0.10%,0.002,0.10%,0.10%,0.00%,Residential
+2017,Paper,Newspaper,Designated Paper,1.90%,0.011,0.50%,9.80%,0.00%,Residential
+2017,Paper,Plain OCC/Kraft Paper,Designated Paper,5.70%,0.014,1.00%,47.20%,0.20%,Residential
+2017,Paper,High Grade Paper,Designated Paper,0.70%,0.005,0.10%,2.60%,0.00%,Residential
+2017,Paper,Mixed Low Grade Paper,Designated Paper,8.70%,0.068,2.40%,31.40%,0.90%,Residential
+2017,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,8.10%,0.098,0.70%,1.40%,2.00%,Residential
+2017,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),1.00%,0.011,0.70%,0.60%,0.40%,Residential
+2017,Paper,Paper Beverage Cartons/Aseptic Boxes,Designated MGP,0.40%,0.003,1.40%,0.30%,0.00%,Residential
+2017,Plastic,#1 PET Bottles,Designated MGP,1.30%,0.009,6.20%,0.20%,0.10%,Residential
+2017,Plastic,#2 HDPE Natural Bottles,Designated MGP,0.50%,0.002,3.30%,0.00%,0.00%,Residential
+2017,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,0.50%,0.003,3.40%,0.00%,0.10%,Residential
+2017,Plastic,Other Plastic Bottles,Designated MGP,0.10%,0.001,0.50%,0.00%,0.00%,Residential
+2017,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),1.90%,0.016,6.60%,0.40%,0.20%,Residential
+2017,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),2.30%,0.02,7.60%,0.60%,0.30%,Residential
+2017,Plastic,#6 EPS Containers/Packaging (including Single Use),Other (Non-Divertable),0.70%,0.008,0.20%,0.20%,0.10%,Residential
+2017,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),1.90%,0.022,0.80%,0.30%,0.70%,Residential
+2017,Plastic,Film Plastic: Other,Other (Non-Divertable),4.90%,0.054,4.00%,1.50%,1.50%,Residential
+2017,Plastic,Single Use Plastic Plates/Cups/Cutlery (excluding EPS),Designated MGP (after 2013 WCS),0.60%,0.007,0.80%,0.10%,0.00%,Residential
+2017,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),0.10%,0.001,0.30%,0.00%,0.00%,Residential
+2017,Glass,Clear Container Glass,Designated MGP,1.70%,0.01,9.30%,0.20%,0.10%,Residential
+2017,Glass,Green Container Glass,Designated MGP,0.60%,0.003,4.50%,0.10%,0.00%,Residential
+2017,Glass,Brown Container Glass,Designated MGP,0.40%,0.002,1.80%,0.10%,0.00%,Residential
+2017,Glass,Other Color Container Glass,Designated MGP,0.10%,0,0.20%,0.00%,0.00%,Residential
+2017,Glass,Mixed Cullet,Designated MGP,1.50%,0.003,13.20%,0.10%,0.00%,Residential
+2017,Glass,Other Glass,Designated MGP,0.30%,0.003,0.80%,0.10%,0.10%,Residential
+2017,Metal,Aluminum Cans,Designated MGP,0.30%,0.002,0.90%,0.00%,0.00%,Residential
+2017,Metal,Aluminum Foil/Containers,Designated MGP,0.70%,0.008,1.20%,0.00%,0.10%,Residential
+2017,Metal,Other Aluminum,Designated MGP,0.10%,0,0.20%,0.00%,0.00%,Residential
+2017,Metal,Other Non-Ferrous,Designated MGP,0.30%,0.002,1.00%,0.00%,0.00%,Residential
+2017,Metal,Steel/Tin Food Cans,Designated MGP,0.80%,0.005,4.40%,0.10%,0.00%,Residential
+2017,Metal,Empty Aerosol Cans,Designated MGP,0.20%,0.001,0.60%,0.00%,0.00%,Residential
+2017,Metal,Other Ferrous,Designated MGP,1.10%,0.005,7.20%,0.20%,0.00%,Residential
+2017,Metal,Mixed Metals,Designated MGP,0.80%,0.007,2.70%,0.00%,0.00%,Residential
+2017,Metal,Appliances: Ferrous,Designated MGP,0.30%,0.001,2.50%,0.00%,0.00%,Residential
+2017,Metal,Appliances: Non-Ferrous,Designated MGP,0.10%,0.001,0.60%,0.00%,0.00%,Residential
+2017,Organics,Yard Waste,Organics Suitable for Composting,5.50%,0.065,0.00%,0.00%,59.90%,Residential
+2017,Organics,Food,Organics Suitable for Composting,20.70%,0.251,2.50%,0.90%,31.00%,Residential
+2017,Organics,Non-C&D Wood,Other (Non-Divertable),0.40%,0.005,0.20%,0.20%,0.00%,Residential
+2017,Organics,Textiles: Non-Clothing,Textiles,2.30%,0.029,0.20%,0.10%,0.10%,Residential
+2017,Organics,Textiles: Clothing,Textiles,2.90%,0.035,0.20%,0.10%,0.20%,Residential
+2017,Organics,Carpet/Upholstery,Other (Non-Divertable),1.40%,0.017,0.00%,0.00%,0.20%,Residential
+2017,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),4.20%,0.052,0.10%,0.10%,0.30%,Residential
+2017,Organics,Animal By-Products,Other (Non-Divertable),1.40%,0.017,0.10%,0.00%,0.10%,Residential
+2017,Organics,Shoes/Rubber/Leather,Textiles,1.10%,0.012,0.50%,0.10%,0.10%,Residential
+2017,Organics,Fines,Other (Non-Divertable),2.80%,0.033,1.50%,0.20%,0.40%,Residential
+2017,Organics,Miscellaneous Organics,Other (Non-Divertable),0.60%,0.007,0.20%,0.00%,0.40%,Residential
+2017,E-Waste,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,0.20%,0.001,0.40%,0.00%,0.10%,Residential
+2017,E-Waste,Computer Monitors,E-Waste,0.00%,0,0.10%,0.00%,0.00%,Residential
+2017,E-Waste,Televisions,E-Waste,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,E-Waste,Other Computer Equipment,E-Waste,0.10%,0.001,0.30%,0.10%,0.00%,Residential
+2017,Construction & Demolition,Untreated Dimensional Lumber/Pallets/Crates,C&D,0.40%,0.004,0.00%,0.00%,0.00%,Residential
+2017,Construction & Demolition,Treated/Contaminated Wood,C&D,2.00%,0.024,0.10%,0.00%,0.00%,Residential
+2017,Construction & Demolition,Other C&D Debris Not Elsewhere Classified,C&D,2.10%,0.026,0.30%,0.10%,0.10%,Residential
+2017,Miscellaneous Inorganics,Miscellaneous Inorganics,Other,0.80%,0.008,1.10%,0.10%,0.10%,Residential
+2017,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Oil Filters,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Antifreeze,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Wet-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Dry-Cell Batteries,HHW,0.10%,0.001,0.10%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Latex Paints/Water-Based Adhesives/Glues,HHW,0.10%,0.001,0.10%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Oil-Based Paint/Solvent,HHW,0.00%,0,0.10%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Mercury-Laden Wastes,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Compressed Gas Cylinders/Fire Extinguishers,HHW,0.00%,0,0.00%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Home Medical Products,HHW,0.20%,0.002,0.10%,0.00%,0.00%,Residential
+2017,Harmful Household Products,Other Potentially Harmful Wastes,HHW,0.10%,0.001,0.10%,0.00%,0.00%,Residential
+2013,Paper,Newspaper,Designated Paper,3.30%,0.015,0.70%,21.10%,-,Residential
+2013,Paper,Plain OCC/Kraft Paper,Designated Paper,4.40%,0.015,0.50%,33.70%,-,Residential
+2013,Paper,High Grade Paper,Designated Paper,1.30%,0.009,0.10%,5.90%,-,Residential
+2013,Paper,Mixed Low Grade Paper,Designated Paper,9.30%,0.074,2.40%,31.90%,-,Residential
+2013,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,7.50%,0.088,0.50%,0.60%,-,Residential
+2013,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),0.90%,0.009,0.50%,0.90%,-,Residential
+2013,Paper,Paper Beverage Cartons/Aseptic Boxes,Designated MGP,0.40%,0.003,2.30%,0.30%,-,Residential
+2013,Plastic,#1 PET Bottles,Designated MGP,1.40%,0.009,9.50%,0.20%,-,Residential
+2013,Plastic,#2 HDPE Natural Bottles,Designated MGP,0.50%,0.002,4.50%,0.10%,-,Residential
+2013,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,0.40%,0.002,3.60%,0.00%,-,Residential
+2013,Plastic,Other Plastic Bottles,Designated MGP,0.10%,0.001,0.80%,0.00%,-,Residential
+2013,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),1.60%,0.015,4.00%,0.20%,-,Residential
+2013,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),1.70%,0.016,4.70%,0.30%,-,Residential
+2013,Plastic,#6 EPS Containers/Packaging (including Single Use),Other (Non-Divertable),0.80%,0.009,0.10%,0.20%,-,Residential
+2013,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),2.30%,0.027,0.90%,0.20%,-,Residential
+2013,Plastic,Film Plastic: Other,Other (Non-Divertable),4.40%,0.048,3.80%,1.40%,-,Residential
+2013,Plastic,Single Use Plastic Plates/Cups/Cutlery (excluding EPS),Designated MGP (after 2013 WCS),0.50%,0.005,0.30%,0.00%,-,Residential
+2013,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),0.20%,0.003,0.40%,0.00%,-,Residential
+2013,Glass,Clear Container Glass,Designated MGP,1.80%,0.009,14.90%,0.10%,-,Residential
+2013,Glass,Green Container Glass,Designated MGP,0.70%,0.002,7.20%,0.00%,-,Residential
+2013,Glass,Brown Container Glass,Designated MGP,0.40%,0.002,3.00%,0.00%,-,Residential
+2013,Glass,Other Color Container Glass,Designated MGP,0.00%,0,0.30%,0.00%,-,Residential
+2013,Glass,Mixed Cullet,Designated MGP,1.10%,0.004,11.90%,0.10%,-,Residential
+2013,Glass,Other Glass,Designated MGP,0.40%,0.003,1.20%,0.10%,-,Residential
+2013,Metal,Aluminum Cans,Designated MGP,0.30%,0.002,1.20%,0.00%,-,Residential
+2023,Paper,Plain OCC/Kraft Paper,Designated Paper,-,0.033,-,-,-,NYCHA
+2013,Metal,Aluminum Foil/Containers,Designated MGP,0.50%,0.005,0.80%,0.00%,-,Residential
+2013,Metal,Other Aluminum,Designated MGP,0.10%,0.001,0.30%,0.00%,-,Residential
+2013,Metal,Other Non-Ferrous,Designated MGP,0.10%,0.001,0.40%,0.00%,-,Residential
+2013,Metal,Steel/Tin Food Cans,Designated MGP,0.90%,0.005,6.20%,0.10%,-,Residential
+2013,Metal,Empty Aerosol Cans,Designated MGP,0.10%,0.001,0.80%,0.00%,-,Residential
+2013,Metal,Other Ferrous,Designated MGP,0.80%,0.007,3.00%,0.10%,-,Residential
+2013,Metal,Mixed Metals,Designated MGP,0.40%,0.005,0.90%,0.00%,-,Residential
+2013,Metal,Appliances: Ferrous,Designated MGP,0.30%,0.002,1.60%,0.00%,-,Residential
+2013,Metal,Appliances: Non-Ferrous,Designated MGP,0.00%,0,0.30%,0.00%,-,Residential
+2013,Organics,Yard Waste,Organics Suitable for Composting,6.10%,0.072,0.10%,0.00%,-,Residential
+2013,Organics,Food,Organics Suitable for Composting,18.00%,0.211,2.60%,0.80%,-,Residential
+2013,Organics,Non-C&D Wood,Other (Non-Divertable),3.50%,0.041,0.10%,0.10%,-,Residential
+2013,Organics,Textiles: Non-Clothing,Textiles,2.20%,0.027,0.10%,0.10%,-,Residential
+2013,Organics,Textiles: Clothing,Textiles,2.80%,0.034,0.10%,0.10%,-,Residential
+2013,Organics,Carpet/Upholstery,Other (Non-Divertable),1.20%,0.015,0.00%,0.00%,-,Residential
+2013,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),3.80%,0.045,0.10%,0.10%,-,Residential
+2013,Organics,Animal By-Products,Other (Non-Divertable),1.80%,0.021,0.00%,0.00%,-,Residential
+2013,Organics,Shoes/Rubber/Leather,Textiles,1.10%,0.012,0.20%,0.30%,-,Residential
+2013,Organics,Fines,Other (Non-Divertable),2.80%,0.033,0.60%,0.20%,-,Residential
+2013,Organics,Miscellaneous Organics,Other (Non-Divertable),0.60%,0.007,0.10%,0.10%,-,Residential
+2013,E-Waste,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,0.30%,0.004,0.40%,0.00%,-,Residential
+2013,E-Waste,Computer Monitors,E-Waste,0.00%,0,0.00%,0.00%,-,Residential
+2013,E-Waste,Televisions,E-Waste,0.30%,0.003,0.00%,0.00%,-,Residential
+2013,E-Waste,Other Computer Equipment,E-Waste,0.30%,0.003,0.30%,0.00%,-,Residential
+2013,Construction & Demolition,Untreated Dimensional Lumber/Pallets/Crates,C&D,0.80%,0.009,0.00%,0.00%,-,Residential
+2013,Construction & Demolition,Treated/Contaminated Wood,C&D,1.30%,0.015,0.00%,0.10%,-,Residential
+2013,Construction & Demolition,Other C&D Debris Not Elsewhere Classified,C&D,3.00%,0.036,0.30%,0.20%,-,Residential
+2013,Miscellaneous Inorganics,Miscellaneous Inorganics,Other,0.80%,0.009,0.90%,0.10%,-,Residential
+2013,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Oil Filters,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Antifreeze,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Wet-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Dry-Cell Batteries,HHW,0.10%,0.001,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Latex Paints/Water-Based Adhesives/Glues,HHW,0.10%,0.001,0.40%,0.00%,-,Residential
+2013,Harmful Household Products,Oil-Based Paint/Solvent,HHW,0.00%,0,0.10%,0.00%,-,Residential
+2013,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Mercury-Laden Wastes,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Compressed Gas Cylinders/Fire Extinguishers,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2013,Harmful Household Products,Home Medical Products,HHW,0.10%,0.002,0.10%,0.00%,-,Residential
+2013,Harmful Household Products,Other Potentially Harmful Wastes,HHW,0.00%,0.001,0.00%,0.00%,-,Residential
+2005,Paper,Newspaper,Designated Paper,7.50%,0.037,0.60%,41.60%,-,Residential
+2005,Paper,Plain OCC/Kraft Paper,Designated Paper,3.10%,0.019,0.30%,14.00%,-,Residential
+2005,Paper,High Grade Paper,Designated Paper,0.90%,0.007,0.10%,3.20%,-,Residential
+2005,Paper,Mixed Low Grade Paper,Designated Paper,11.30%,0.088,1.40%,36.20%,-,Residential
+2005,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,6.10%,0.072,0.40%,1.40%,-,Residential
+2005,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),0.70%,0.007,0.40%,0.70%,-,Residential
+2005,Paper,Paper Beverage Cartons/Aseptic Boxes,Designated MGP,0.50%,0.004,2.00%,0.30%,-,Residential
+2005,Plastic,#1 PET Bottles,Designated MGP,1.20%,0.009,6.50%,0.10%,-,Residential
+2005,Plastic,#2 HDPE Natural Bottles,Designated MGP,0.50%,0.003,3.10%,0.00%,-,Residential
+2005,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,0.50%,0.003,3.30%,0.00%,-,Residential
+2005,Plastic,Other Plastic Bottles,Designated MGP,0.10%,0.001,0.30%,0.00%,-,Residential
+2005,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),1.30%,0.013,2.30%,0.10%,-,Residential
+2005,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),1.90%,0.019,3.60%,0.20%,-,Residential
+2005,Plastic,#6 EPS Containers/Packaging (including Single Use),Other (Non-Divertable),0.50%,0.006,0.10%,0.00%,-,Residential
+2005,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),2.70%,0.032,0.90%,0.20%,-,Residential
+2005,Plastic,Film Plastic: Other,Other (Non-Divertable),4.80%,0.054,3.10%,0.70%,-,Residential
+2005,Plastic,Single Use Plastic Plates/Cups/Cutlery (excluding EPS),Designated MGP (after 2013 WCS),0.50%,0.006,0.20%,0.00%,-,Residential
+2005,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),0.30%,0.002,0.90%,0.00%,-,Residential
+2005,Glass,Clear Container Glass,Designated MGP,1.60%,0.012,8.20%,0.00%,-,Residential
+2005,Glass,Green Container Glass,Designated MGP,0.50%,0.003,4.10%,0.00%,-,Residential
+2005,Glass,Brown Container Glass,Designated MGP,0.40%,0.003,2.00%,0.00%,-,Residential
+2005,Glass,Other Color Container Glass,Designated MGP,0.00%,0,0.20%,0.00%,-,Residential
+2005,Glass,Mixed Cullet,Designated MGP,1.80%,0.006,18.10%,0.00%,-,Residential
+2005,Glass,Other Glass,Designated MGP,0.20%,0.002,0.40%,0.00%,-,Residential
+2005,Metal,Aluminum Cans,Designated MGP,0.20%,0.002,0.60%,0.00%,-,Residential
+2005,Metal,Aluminum Foil/Containers,Designated MGP,0.50%,0.006,1.00%,0.00%,-,Residential
+2005,Metal,Other Aluminum,Designated MGP,0.10%,0,0.40%,0.00%,-,Residential
+2005,Metal,Other Non-Ferrous,Designated MGP,0.20%,0.001,0.80%,0.00%,-,Residential
+2005,Metal,Steel/Tin Food Cans,Designated MGP,1.20%,0.008,7.30%,0.00%,-,Residential
+2005,Metal,Empty Aerosol Cans,Designated MGP,0.20%,0.001,0.70%,0.00%,-,Residential
+2005,Metal,Other Ferrous,Designated MGP,1.90%,0.012,12.80%,0.00%,-,Residential
+2005,Metal,Mixed Metals,Designated MGP,0.70%,0.005,3.30%,0.00%,-,Residential
+2005,Metal,Appliances: Ferrous,Designated MGP,0.70%,0.004,5.50%,0.00%,-,Residential
+2005,Metal,Appliances: Non-Ferrous,Designated MGP,0.00%,0,0.10%,0.00%,-,Residential
+2005,Organics,Yard Waste,Organics Suitable for Composting,4.20%,0.051,0.00%,0.00%,-,Residential
+2005,Organics,Food,Organics Suitable for Composting,17.70%,0.214,1.60%,0.30%,-,Residential
+2005,Organics,Non-C&D Wood,Other (Non-Divertable),2.30%,0.027,0.30%,0.00%,-,Residential
+2005,Organics,Textiles: Non-Clothing,Textiles,1.40%,0.016,0.10%,0.10%,-,Residential
+2005,Organics,Textiles: Clothing,Textiles,2.50%,0.03,0.10%,0.10%,-,Residential
+2005,Organics,Carpet/Upholstery,Other (Non-Divertable),1.20%,0.015,0.00%,0.00%,-,Residential
+2005,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),3.20%,0.039,0.10%,0.00%,-,Residential
+2005,Organics,Animal By-Products,Other (Non-Divertable),1.10%,0.013,0.00%,0.00%,-,Residential
+2005,Organics,Shoes/Rubber/Leather,Textiles,1.00%,0.012,0.20%,0.10%,-,Residential
+2005,Organics,Fines,Other (Non-Divertable),3.60%,0.043,0.20%,0.30%,-,Residential
+2005,Organics,Miscellaneous Organics,Other (Non-Divertable),0.70%,0.009,0.10%,0.00%,-,Residential
+2005,E-Waste,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,0.30%,0.003,0.30%,0.00%,-,Residential
+2005,E-Waste,Computer Monitors,E-Waste,0.10%,0.001,0.10%,0.00%,-,Residential
+2005,E-Waste,Televisions,E-Waste,0.10%,0.001,0.00%,0.00%,-,Residential
+2005,E-Waste,Other Computer Equipment,E-Waste,0.20%,0.002,0.50%,0.00%,-,Residential
+2005,Construction & Demolition,Untreated Dimensional Lumber/Pallets/Crates,C&D,0.60%,0.008,0.00%,0.00%,-,Residential
+2005,Construction & Demolition,Treated/Contaminated Wood,C&D,1.60%,0.02,0.10%,0.00%,-,Residential
+2005,Construction & Demolition,Other C&D Debris Not Elsewhere Classified,C&D,3.00%,0.036,0.30%,0.10%,-,Residential
+2005,Miscellaneous Inorganics,Miscellaneous Inorganics,Other,0.60%,0.007,0.60%,0.00%,-,Residential
+2005,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Oil Filters,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Antifreeze,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Wet-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Dry-Cell Batteries,HHW,0.10%,0.001,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Latex Paints/Water-Based Adhesives/Glues,HHW,0.10%,0.001,0.10%,0.00%,-,Residential
+2005,Harmful Household Products,Oil-Based Paint/Solvent,HHW,0.00%,0,0.10%,0.00%,-,Residential
+2005,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Mercury-Laden Wastes,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Compressed Gas Cylinders/Fire Extinguishers,HHW,0.00%,0,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Home Medical Products,HHW,0.00%,0.001,0.00%,0.00%,-,Residential
+2005,Harmful Household Products,Other Potentially Harmful Wastes,HHW,0.00%,0,0.10%,0.00%,-,Residential
+2023,Paper,Newspaper,Designated Paper,-,0.004,-,-,-,NYCHA
+2023,Paper,High Grade Paper,Designated Paper,-,0.009,-,-,-,NYCHA
+2023,Paper,Mixed Low Grade Paper,Designated Paper,-,0.085,-,-,-,NYCHA
+2023,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,-,0.133,-,-,-,NYCHA
+2023,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),-,0.014,-,-,-,NYCHA
+2023,Paper,Beverage Cartons & Aseptic Boxes,Designated MGP,-,0.005,-,-,-,NYCHA
+2023,Plastic,#1 PET Bottles,Designated MGP,-,0.025,-,-,-,NYCHA
+2023,Plastic,#2 HDPE Natural Bottles,Designated MGP,-,0.003,-,-,-,NYCHA
+2023,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,-,0.005,-,-,-,NYCHA
+2023,Plastic,Other Plastic Bottles,Designated MGP,-,0.001,-,-,-,NYCHA
+2023,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),-,0.027,-,-,-,NYCHA
+2023,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),-,0.016,-,-,-,NYCHA
+2023,Plastic,#6 EPS Containers/Packaging,Other (Non-Divertable),-,0.003,-,-,-,NYCHA
+2023,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),-,0.007,-,-,-,NYCHA
+2023,Plastic,Film Plastic: Other,Other (Non-Divertable),-,0.07,-,-,-,NYCHA
+2023,Plastic,Single-Use Plastics (Excluding EPS),Designated MGP (after 2013 WCS),-,0.007,-,-,-,NYCHA
+2023,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),-,0.001,-,-,-,NYCHA
+2023,Glass,Clear Container Glass,Designated MGP,-,0.014,-,-,-,NYCHA
+2023,Glass,Green Container Glass,Designated MGP,-,0.003,-,-,-,NYCHA
+2023,Glass,Brown Container Glass,Designated MGP,-,0.002,-,-,-,NYCHA
+2023,Glass,Other Color Container Glass,Designated MGP,-,0,-,-,-,NYCHA
+2023,Glass,Mixed Cullet,Designated MGP,-,0.009,-,-,-,NYCHA
+2023,Glass,Other Glass,Designated MGP,-,0.003,-,-,-,NYCHA
+2023,Metal,Aluminum Cans,Designated MGP,-,0.006,-,-,-,NYCHA
+2023,Metal,Aluminum Foil/Containers,Designated MGP,-,0.008,-,-,-,NYCHA
+2023,Metal,Other Aluminum,Designated MGP,-,0.002,-,-,-,NYCHA
+2023,Metal,Other Non-Ferrous,Designated MGP,-,0.001,-,-,-,NYCHA
+2023,Metal,Steel/Tin Food Cans,Designated MGP,-,0.008,-,-,-,NYCHA
+2023,Metal,Empty Aerosol Cans,Designated MGP,-,0.002,-,-,-,NYCHA
+2023,Metal,Other Ferrous,Designated MGP,-,0.01,-,-,-,NYCHA
+2023,Metal,Mixed Metals,Designated MGP,-,0.004,-,-,-,NYCHA
+2023,Metal,Appliances: Ferrous,Designated MGP,-,0.001,-,-,-,NYCHA
+2023,Metal,Appliances: Non-Ferrous,Designated MGP,-,0,-,-,-,NYCHA
+2023,Organics,Yard Waste,Organics Suitable for Composting,-,0.012,-,-,-,NYCHA
+2023,Organics,Food,Organics Suitable for Composting,-,0.201,-,-,-,NYCHA
+2023,Organics,Non-C&D Wood,Other (Non-Divertable),-,0.003,-,-,-,NYCHA
+2023,Organics,Textiles: Non-Clothing,Other (Non-Divertable),-,0.02,-,-,-,NYCHA
+2023,Organics,Textiles: Clothing,Other (Non-Divertable),-,0.026,-,-,-,NYCHA
+2023,Organics,Shoes/Rubber/Leather,Other (Non-Divertable),-,0.008,-,-,-,NYCHA
+2023,Organics,Carpet/Upholstery,Other (Non-Divertable),-,0.004,-,-,-,NYCHA
+2023,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),-,0.085,-,-,-,NYCHA
+2023,Organics,Animal By-Products,Other (Non-Divertable),-,0.011,-,-,-,NYCHA
+2023,Organics,Fines,Other (Non-Divertable),-,0.037,-,-,-,NYCHA
+2023,Organics,Miscellaneous Organics,Other (Non-Divertable),-,0.017,-,-,-,NYCHA
+2023,Electronics,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,-,0.007,-,-,-,NYCHA
+2023,Electronics,Computer Monitors,E-Waste,-,0,-,-,-,NYCHA
+2023,Electronics,Televisions,E-Waste,-,0,-,-,-,NYCHA
+2023,Electronics,Other Computer Equipment,E-Waste,-,0.003,-,-,-,NYCHA
+2023,C&D,Untreated Dimensional Lumber/Pallets/Crates,C&D,-,0.002,-,-,-,NYCHA
+2023,C&D,Treated/Contaminated Wood,C&D,-,0.014,-,-,-,NYCHA
+2023,C&D,Other C&D Debris Not Elsewhere Classified,C&D,-,0.009,-,-,-,NYCHA
+2023,Miscellaneous,Miscellaneous Inorganics,Other,-,0.018,-,-,-,NYCHA
+2023,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Oil Filters,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Antifreeze,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Wet-Cell Batteries,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Dry-Cell Batteries,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Other Potentially Harmful Wastes,HHW,-,0.001,-,-,-,NYCHA
+2023,Harmful Household Products,Latex Paint/Water-Based Adhesives/Glues,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Oil-Based Paint/Solvent,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,Mercury-Laden Wastes,HHW,-,0,-,-,-,NYCHA
+2023,Harmful Household Products,"Compressed Gas Cylinders, Fire Extinguishers",HHW,-,0.001,-,-,-,NYCHA
+2023,Harmful Household Products,Home Medical Products,HHW,-,0.002,-,-,-,NYCHA
+2017,Paper,Newspaper,Designated Paper,-,0.024,-,-,-,NYCHA
+2017,Paper,Plain OCC/Kraft Paper,Designated Paper,-,0.018,-,-,-,NYCHA
+2017,Paper,High Grade Paper,Designated Paper,-,0.009,-,-,-,NYCHA
+2017,Paper,Mixed Low Grade Paper,Designated Paper,-,0.091,-,-,-,NYCHA
+2017,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,-,0.07,-,-,-,NYCHA
+2017,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),-,0.017,-,-,-,NYCHA
+2017,Paper,Beverage Cartons & Aseptic Boxes,Designated MGP,-,0.005,-,-,-,NYCHA
+2017,Plastic,#1 PET Bottles,Designated MGP,-,0.023,-,-,-,NYCHA
+2017,Plastic,#2 HDPE Natural Bottles,Designated MGP,-,0.007,-,-,-,NYCHA
+2017,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,-,0.007,-,-,-,NYCHA
+2017,Plastic,Other Plastic Bottles,Designated MGP,-,0.001,-,-,-,NYCHA
+2017,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),-,0.016,-,-,-,NYCHA
+2017,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),-,0.023,-,-,-,NYCHA
+2017,Plastic,#6 EPS Containers/Packaging,Other (Non-Divertable),-,0.009,-,-,-,NYCHA
+2017,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),-,0.027,-,-,-,NYCHA
+2017,Plastic,Film Plastic: Other,Other (Non-Divertable),-,0.048,-,-,-,NYCHA
+2017,Plastic,Single-Use Plastics (Excluding EPS),Designated MGP (after 2013 WCS),-,0.004,-,-,-,NYCHA
+2017,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),-,0.003,-,-,-,NYCHA
+2017,Glass,Clear Container Glass,Designated MGP,-,0.027,-,-,-,NYCHA
+2017,Glass,Green Container Glass,Designated MGP,-,0.004,-,-,-,NYCHA
+2017,Glass,Brown Container Glass,Designated MGP,-,0.004,-,-,-,NYCHA
+2017,Glass,Other Color Container Glass,Designated MGP,-,0.001,-,-,-,NYCHA
+2017,Glass,Mixed Cullet,Designated MGP,-,0.005,-,-,-,NYCHA
+2017,Glass,Other Glass,Designated MGP,-,0.004,-,-,-,NYCHA
+2017,Metal,Aluminum Cans,Designated MGP,-,0.006,-,-,-,NYCHA
+2017,Metal,Aluminum Foil/Containers,Designated MGP,-,0.008,-,-,-,NYCHA
+2017,Metal,Other Aluminum,Designated MGP,-,0.001,-,-,-,NYCHA
+2017,Metal,Other Non-Ferrous,Designated MGP,-,0.004,-,-,-,NYCHA
+2017,Metal,Steel/Tin Food Cans,Designated MGP,-,0.013,-,-,-,NYCHA
+2017,Metal,Empty Aerosol Cans,Designated MGP,-,0.002,-,-,-,NYCHA
+2017,Metal,Other Ferrous,Designated MGP,-,0.008,-,-,-,NYCHA
+2017,Metal,Mixed Metals,Designated MGP,-,0.006,-,-,-,NYCHA
+2017,Metal,Appliances: Ferrous,Designated MGP,-,0.007,-,-,-,NYCHA
+2017,Metal,Appliances: Non-Ferrous,Designated MGP,-,0.005,-,-,-,NYCHA
+2017,Organics,Yard Waste,Organics Suitable for Composting,-,0.024,-,-,-,NYCHA
+2017,Organics,Food,Organics Suitable for Composting,-,0.226,-,-,-,NYCHA
+2017,Organics,Non-C&D Wood,Other (Non-Divertable),-,0.005,-,-,-,NYCHA
+2017,Organics,Textiles: Non-Clothing,Other (Non-Divertable),-,0.027,-,-,-,NYCHA
+2017,Organics,Textiles: Clothing,Other (Non-Divertable),-,0.039,-,-,-,NYCHA
+2017,Organics,Shoes/Rubber/Leather,Other (Non-Divertable),-,0.011,-,-,-,NYCHA
+2017,Organics,Carpet/Upholstery,Other (Non-Divertable),-,0.002,-,-,-,NYCHA
+2017,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),-,0.07,-,-,-,NYCHA
+2017,Organics,Animal By-Products,Other (Non-Divertable),-,0.013,-,-,-,NYCHA
+2017,Organics,Fines,Other (Non-Divertable),-,0.035,-,-,-,NYCHA
+2017,Organics,Miscellaneous Organics,Other (Non-Divertable),-,0.005,-,-,-,NYCHA
+2017,Electronics,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,-,0.003,-,-,-,NYCHA
+2017,Electronics,Computer Monitors,E-Waste,-,0.003,-,-,-,NYCHA
+2017,Electronics,Televisions,E-Waste,-,0,-,-,-,NYCHA
+2017,Electronics,Other Computer Equipment,E-Waste,-,0.002,-,-,-,NYCHA
+2017,C&D,Untreated Dimensional Lumber/Pallets/Crates,C&D,-,0.001,-,-,-,NYCHA
+2017,C&D,Treated/Contaminated Wood,C&D,-,0.01,-,-,-,NYCHA
+2017,C&D,Other C&D Debris Not Elsewhere Classified,C&D,-,0.009,-,-,-,NYCHA
+2017,Miscellaneous,Miscellaneous Inorganics,Other,-,0.004,-,-,-,NYCHA
+2017,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Oil Filters,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Antifreeze,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Wet-Cell Batteries,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Dry-Cell Batteries,HHW,-,0.001,-,-,-,NYCHA
+2017,Harmful Household Products,Other Potentially Harmful Wastes,HHW,-,0.001,-,-,-,NYCHA
+2017,Harmful Household Products,Latex Paint/Water-Based Adhesives/Glues,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Oil-Based Paint/Solvent,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Mercury-Laden Wastes,HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,"Compressed Gas Cylinders, Fire Extinguishers",HHW,-,0,-,-,-,NYCHA
+2017,Harmful Household Products,Home Medical Products,HHW,-,0.003,-,-,-,NYCHA
+2023,Paper,Newspaper,Designated Paper,0.20%,0.001,0.30%,0.80%,0.10%,Schools
+2023,Paper,Plain OCC/Kraft Paper,Designated Paper,12.30%,0.032,4.40%,63.20%,2.00%,Schools
+2023,Paper,High Grade Paper,Designated Paper,1.90%,0.018,0.10%,4.20%,1.10%,Schools
+2023,Paper,Mixed Low Grade Paper,Designated Paper,7.80%,0.093,2.60%,12.10%,2.70%,Schools
+2023,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,15.20%,0.18,4.80%,2.80%,19.00%,Schools
+2023,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),1.90%,0.022,1.10%,1.60%,1.40%,Schools
+2023,Paper,Beverage Cartons & Aseptic Boxes,Designated MGP,1.90%,0.019,5.50%,0.20%,2.30%,Schools
+2023,Plastic,#1 PET Bottles,Designated MGP,1.50%,0.02,2.60%,0.50%,0.70%,Schools
+2023,Plastic,#2 HDPE Natural Bottles,Designated MGP,0.20%,0.002,2.00%,0.00%,0.10%,Schools
+2023,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,0.10%,0.001,0.70%,0.10%,0.10%,Schools
+2023,Plastic,Other Plastic Bottles,Designated MGP,0.00%,0,0.10%,0.00%,0.00%,Schools
+2023,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),1.80%,0.016,4.50%,0.90%,2.30%,Schools
+2023,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),0.70%,0.007,1.90%,0.80%,0.40%,Schools
+2023,Plastic,#6 EPS Containers/Packaging,Other (Non-Divertable),0.00%,0,0.00%,0.10%,0.00%,Schools
+2023,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),0.50%,0.006,0.10%,0.00%,0.40%,Schools
+2023,Plastic,Film Plastic: Other,Other (Non-Divertable),7.50%,0.086,7.70%,2.80%,7.90%,Schools
+2023,Plastic,Single-Use Plastics (Excluding EPS),Designated MGP (after 2013 WCS),1.10%,0.013,1.20%,0.20%,1.30%,Schools
+2023,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),0.00%,0,0.10%,0.00%,0.00%,Schools
+2023,Glass,Clear Container Glass,Designated MGP,0.40%,0.005,1.20%,0.20%,0.10%,Schools
+2023,Glass,Green Container Glass,Designated MGP,0.10%,0.001,0.30%,0.10%,0.00%,Schools
+2023,Glass,Brown Container Glass,Designated MGP,0.10%,0.001,0.00%,0.00%,0.00%,Schools
+2023,Glass,Other Color Container Glass,Designated MGP,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Glass,Mixed Cullet,Designated MGP,0.10%,0.002,0.20%,0.10%,0.00%,Schools
+2023,Glass,Other Glass,Designated MGP,0.10%,0.001,0.10%,0.10%,0.00%,Schools
+2023,Metal,Aluminum Cans,Designated MGP,0.20%,0.002,0.20%,0.10%,0.10%,Schools
+2023,Metal,Aluminum Foil/Containers,Designated MGP,1.00%,0.012,4.00%,0.10%,0.60%,Schools
+2023,Metal,Other Aluminum,Designated MGP,0.00%,0.001,0.00%,0.00%,0.00%,Schools
+2023,Metal,Other Non-Ferrous,Designated MGP,0.10%,0.001,0.60%,0.00%,0.00%,Schools
+2023,Metal,Steel/Tin Food Cans,Designated MGP,0.70%,0.002,12.00%,0.10%,0.10%,Schools
+2023,Metal,Empty Aerosol Cans,Designated MGP,0.10%,0.001,0.10%,0.00%,0.00%,Schools
+2023,Metal,Other Ferrous,Designated MGP,0.50%,0.002,8.00%,0.10%,0.00%,Schools
+2023,Metal,Mixed Metals,Designated MGP,0.40%,0.003,1.00%,1.00%,0.10%,Schools
+2023,Metal,Appliances: Ferrous,Designated MGP,0.10%,0,1.80%,0.00%,0.00%,Schools
+2023,Metal,Appliances: Non-Ferrous,Designated MGP,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Organics,Yard Waste,Organics Suitable for Composting,1.70%,0.023,0.00%,0.00%,1.70%,Schools
+2023,Organics,Food,Organics Suitable for Composting,32.20%,0.324,26.70%,4.70%,50.70%,Schools
+2023,Organics,Non-C&D Wood,Other (Non-Divertable),0.40%,0.005,0.40%,0.20%,0.10%,Schools
+2023,Organics,Textiles: Non-Clothing,Other (Non-Divertable),0.70%,0.01,0.30%,0.30%,0.30%,Schools
+2023,Organics,Textiles: Clothing,Other (Non-Divertable),0.60%,0.009,0.20%,0.00%,0.20%,Schools
+2023,Organics,Shoes/Rubber/Leather,Other (Non-Divertable),0.40%,0.006,0.40%,0.10%,0.40%,Schools
+2023,Organics,Carpet/Upholstery,Other (Non-Divertable),0.10%,0.002,0.00%,0.00%,0.00%,Schools
+2023,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),0.80%,0.013,0.20%,0.30%,0.10%,Schools
+2023,Organics,Animal By-Products,Other (Non-Divertable),0.30%,0.003,0.00%,0.00%,0.40%,Schools
+2023,Organics,Fines,Other (Non-Divertable),2.50%,0.03,1.80%,0.50%,2.90%,Schools
+2023,Organics,Miscellaneous Organics,Other (Non-Divertable),0.30%,0.004,0.00%,0.00%,0.20%,Schools
+2023,Electronics,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,0.20%,0.003,0.00%,0.00%,0.00%,Schools
+2023,Electronics,Computer Monitors,E-Waste,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Electronics,Televisions,E-Waste,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Electronics,Other Computer Equipment,E-Waste,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,C&D,Untreated Dimensional Lumber/Pallets/Crates,C&D,0.00%,0.001,0.00%,0.00%,0.00%,Schools
+2023,C&D,Treated/Contaminated Wood,C&D,0.10%,0.002,0.00%,0.00%,0.00%,Schools
+2023,C&D,Other C&D Debris Not Elsewhere Classified,C&D,0.10%,0,0.00%,0.10%,0.10%,Schools
+2023,Miscellaneous,Miscellaneous Inorganics,Other,0.90%,0.011,0.30%,1.60%,0.30%,Schools
+2023,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Oil Filters,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Antifreeze,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Wet-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Dry-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Other Potentially Harmful Wastes,HHW,0.10%,0.001,0.10%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Latex Paint/Water-Based Adhesives/Glues,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Oil-Based Paint/Solvent,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Mercury-Laden Wastes,HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,"Compressed Gas Cylinders, Fire Extinguishers",HHW,0.00%,0,0.00%,0.00%,0.00%,Schools
+2023,Harmful Household Products,Home Medical Products,HHW,0.10%,0.001,0.00%,0.10%,0.00%,Schools
+2017,Paper,Newspaper,Designated Paper,0.30%,0.002,0.10%,1.00%,-,Schools
+2017,Paper,Plain OCC/Kraft Paper,Designated Paper,10.00%,0.018,1.70%,68.50%,-,Schools
+2017,Paper,High Grade Paper,Designated Paper,3.60%,0.036,0.10%,4.90%,-,Schools
+2017,Paper,Mixed Low Grade Paper,Designated Paper,7.30%,0.073,1.50%,8.50%,-,Schools
+2017,Paper,Paper: Compostable/Soiled/Waxed OCC/Kraft,Organics Suitable for Composting,20.40%,0.231,3.50%,5.00%,-,Schools
+2017,Paper,Other Nonrecyclable Paper,Other (Non-Divertable),1.10%,0.009,0.40%,2.30%,-,Schools
+2017,Paper,Beverage Cartons & Aseptic Boxes,Designated MGP,2.30%,0.024,10.50%,0.10%,-,Schools
+2017,Plastic,#1 PET Bottles,Designated MGP,1.40%,0.015,2.30%,0.30%,-,Schools
+2017,Plastic,#2 HDPE Natural Bottles,Designated MGP,0.20%,0.002,0.90%,0.00%,-,Schools
+2017,Plastic,#2 HDPE Pigmented Bottles,Designated MGP,0.10%,0.001,0.70%,0.00%,-,Schools
+2017,Plastic,Other Plastic Bottles,Designated MGP,0.00%,0,0.10%,0.00%,-,Schools
+2017,Plastic,Rigid Plastic Containers/Packaging,Designated MGP (after 2013 WCS),2.20%,0.024,3.80%,0.50%,-,Schools
+2017,Plastic,Bulky and Other Plastics,Designated MGP (after 2013 WCS),0.90%,0.008,3.90%,0.90%,-,Schools
+2017,Plastic,#6 EPS Containers/Packaging,Other (Non-Divertable),0.40%,0.004,0.00%,0.20%,-,Schools
+2017,Plastic,Film Plastic: Shopping Bags,Other (Non-Divertable),0.60%,0.006,0.20%,0.20%,-,Schools
+2017,Plastic,Film Plastic: Other,Other (Non-Divertable),7.20%,0.078,9.10%,2.70%,-,Schools
+2017,Plastic,Single-Use Plastics (Excluding EPS),Designated MGP (after 2013 WCS),1.20%,0.014,1.10%,0.20%,-,Schools
+2017,Plastic,Appliances: Plastic,Designated MGP (after 2013 WCS),0.00%,0,0.70%,0.00%,-,Schools
+2017,Glass,Clear Container Glass,Designated MGP,0.60%,0.007,1.30%,0.20%,-,Schools
+2017,Glass,Green Container Glass,Designated MGP,0.10%,0.001,0.10%,0.00%,-,Schools
+2017,Glass,Brown Container Glass,Designated MGP,0.00%,0,0.10%,0.00%,-,Schools
+2017,Glass,Other Color Container Glass,Designated MGP,0.00%,0,0.00%,0.00%,-,Schools
+2017,Glass,Mixed Cullet,Designated MGP,0.00%,0,0.10%,0.00%,-,Schools
+2017,Glass,Other Glass,Designated MGP,0.00%,0,0.00%,0.00%,-,Schools
+2017,Metal,Aluminum Cans,Designated MGP,0.20%,0.002,0.10%,0.00%,-,Schools
+2017,Metal,Aluminum Foil/Containers,Designated MGP,0.90%,0.01,1.80%,0.10%,-,Schools
+2017,Metal,Other Aluminum,Designated MGP,0.30%,0.004,0.00%,0.00%,-,Schools
+2017,Metal,Other Non-Ferrous,Designated MGP,0.10%,0.001,0.20%,0.20%,-,Schools
+2017,Metal,Steel/Tin Food Cans,Designated MGP,1.40%,0.011,17.50%,0.00%,-,Schools
+2017,Metal,Empty Aerosol Cans,Designated MGP,0.00%,0,0.00%,0.00%,-,Schools
+2017,Metal,Other Ferrous,Designated MGP,1.20%,0.011,6.20%,0.50%,-,Schools
+2017,Metal,Mixed Metals,Designated MGP,0.20%,0.001,5.10%,0.10%,-,Schools
+2017,Metal,Appliances: Ferrous,Designated MGP,0.10%,0,2.90%,0.00%,-,Schools
+2017,Metal,Appliances: Non-Ferrous,Designated MGP,0.00%,0.001,0.00%,0.00%,-,Schools
+2017,Organics,Yard Waste,Organics Suitable for Composting,1.90%,0.022,0.00%,0.00%,-,Schools
+2017,Organics,Food,Organics Suitable for Composting,29.10%,0.332,19.70%,2.90%,-,Schools
+2017,Organics,Non-C&D Wood,Other (Non-Divertable),0.10%,0.001,0.00%,0.20%,-,Schools
+2017,Organics,Textiles: Non-Clothing,Other (Non-Divertable),0.40%,0.005,0.50%,0.10%,-,Schools
+2017,Organics,Textiles: Clothing,Other (Non-Divertable),0.20%,0.002,0.00%,0.00%,-,Schools
+2017,Organics,Shoes/Rubber/Leather,Other (Non-Divertable),0.20%,0.002,0.10%,0.00%,-,Schools
+2017,Organics,Carpet/Upholstery,Other (Non-Divertable),0.10%,0.001,0.00%,0.00%,-,Schools
+2017,Organics,Disposable Diapers/Sanitary Products,Other (Non-Divertable),0.60%,0.007,0.00%,0.00%,-,Schools
+2017,Organics,Animal By-Products,Other (Non-Divertable),0.00%,0,0.00%,0.00%,-,Schools
+2017,Organics,Fines,Other (Non-Divertable),1.90%,0.022,0.50%,0.30%,-,Schools
+2017,Organics,Miscellaneous Organics,Other (Non-Divertable),0.20%,0.002,0.20%,0.00%,-,Schools
+2017,Electronics,Audio/Visual Equipment-TV Peripherals including Cell Phones,E-Waste,0.00%,0,0.00%,0.00%,-,Schools
+2017,Electronics,Computer Monitors,E-Waste,0.00%,0,0.00%,0.00%,-,Schools
+2017,Electronics,Televisions,E-Waste,0.00%,0,0.00%,0.00%,-,Schools
+2017,Electronics,Other Computer Equipment,E-Waste,0.00%,0,0.60%,0.00%,-,Schools
+2017,C&D,Untreated Dimensional Lumber/Pallets/Crates,C&D,0.10%,0.001,0.00%,0.00%,-,Schools
+2017,C&D,Treated/Contaminated Wood,C&D,0.30%,0.003,0.60%,0.00%,-,Schools
+2017,C&D,Other C&D Debris Not Elsewhere Classified,C&D,0.10%,0.001,0.70%,0.20%,-,Schools
+2017,Miscellaneous,Miscellaneous Inorganics,Other,0.20%,0.002,1.10%,0.10%,-,Schools
+2017,Harmful Household Products,Pesticides/Herbicides/Rodenticides,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Oil Filters,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Antifreeze,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Wet-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Dry-Cell Batteries,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Other Potentially Harmful Wastes,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Latex Paint/Water-Based Adhesives/Glues,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Oil-Based Paint/Solvent,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Fluorescent Tubes/CFLs,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Mercury-Laden Wastes,HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,"Compressed Gas Cylinders, Fire Extinguishers",HHW,0.00%,0,0.00%,0.00%,-,Schools
+2017,Harmful Household Products,Home Medical Products,HHW,0.00%,0,0.00%,0.00%,-,Schools
