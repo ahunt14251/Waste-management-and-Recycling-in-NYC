@@ -1,0 +1,430 @@
+**Loading the Data**
+"""
+
+import pandas as pd
+
+df = pd.read_csv("DSNY_Monthly_Tonnage_Data_20250413.csv")
+
+df.head()
+
+print(df.shape)
+
+print(df.duplicated().sum())
+
+print(df.describe)
+
+"""**Pre-processing**"""
+
+# Clean columns to remove leading/trailing spaces, convert all to lowercase and replace spaces with underscores
+df.columns = (
+    df.columns
+      .str.strip()
+      .str.lower()
+      .str.replace(' ', '_')
+)
+# Convert 'MONTH' column to datetime
+date_format = '%Y / %m'
+df['month_dt'] = pd.to_datetime(df['month'], format=date_format)
+
+# Create a new 'year' and 'month' column from the original 'MONTH' column
+df['year']      = df['month_dt'].dt.year
+df['month_num'] = df['month_dt'].dt.month
+
+df = df[df['year'] >= 2000] # filtering data after year 2000
+
+missing = df.isna().sum().sort_values(ascending=False) # find missing values
+print(missing)
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(8,6))
+sns.heatmap(df.isnull(), cbar=False)
+plt.title("Missing Data Map")
+plt.show()
+
+df.drop(['communitydistrict' , 'borough_id'], axis=1, inplace=True) # drop columns which don't show unnecessary information for this project
+
+"""**Handling missing values**"""
+
+mode_val_refuse = df['refusetonscollected'].mode()[0]
+median_mgptons = df['mgptonscollected'].median()
+median_papertons = df['papertonscollected'].median()
+
+# fill missing values with mode as only 6 values missing
+df['refusetonscollected'] = df['refusetonscollected'].fillna(mode_val_refuse)
+
+# fill missing values with median as many values missing but wish to avoid a skew due to the large standard deviation
+df['mgptonscollected'] = df['mgptonscollected'].fillna(median_mgptons)
+df['papertonscollected'] = df['papertonscollected'].fillna(median_papertons)
+
+# As significant missing values, missing values likely mean there was no collection so will fill missing values with value zero
+df['leavesorganictons'] = df['leavesorganictons'].fillna(0)
+df['xmastreetons'] = df['xmastreetons'].fillna(0)
+df['schoolorganictons'] = df['schoolorganictons'].fillna(0)
+df['resorganicstons'] = df['resorganicstons'].fillna(0)
+
+missing = df.isna().sum().sort_values(ascending=False)
+print(missing)
+
+"""**Creating NYC monthly tonnage for each waste category using the average**"""
+
+# Define waste columns
+waste_cols = [
+    'refusetonscollected', 'papertonscollected', 'mgptonscollected',
+    'resorganicstons', 'schoolorganictons', 'leavesorganictons',
+    'xmastreetons'
+]
+
+# Replace borough-specific monthly tonnages with the NYC mean monthly tonnage for each waste category
+city_monthly = (
+    df
+    .groupby('month_dt')[waste_cols]
+    .mean()
+    .reset_index()
+)
+
+city_monthly['month'] = city_monthly['month_dt'].dt.to_period('M') # Convert the 'month_dt' column to a Period
+
+city_monthly = city_monthly.drop(columns=['month_dt']) # drop 'month_dt' columns as all is now in 'month' column
+
+city_monthly = city_monthly[['month'] + waste_cols]
+
+print (city_monthly.head())
+
+"""**Adding NYC Population data**"""
+
+pop = pd.read_csv("New-York-City-Population-Total-Population-By-Year-2025-05-26-16-34.csv") #Adding the population Data
+pop = pop.rename(columns={'Unnamed: 0': 'Year', 'Population': 'Population'})
+
+city_monthly['Year'] = city_monthly['month'].dt.year # create a 'Year' column to merge the population data and the monthly waste data
+city_monthly = city_monthly.merge(pop, on='Year', how='left')
+
+city_monthly = city_monthly.drop(columns=['Year']) # drop the 'Year' column once data is merged
+
+city_monthly = city_monthly[['month'] + waste_cols + ['Population']] # add 'Population' column at the end
+
+city_monthly = city_monthly.sort_values('month') # order in chronological order
+
+print(city_monthly.head())
+
+city_monthly.describe()
+
+print(city_monthly.shape)
+
+"""**Further EDA**"""
+
+import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
+city_monthly['month_plot'] = city_monthly['month'].dt.to_timestamp()
+plt.figure(figsize=(12, 8))
+for col in waste_cols:
+    sns.lineplot(data=city_monthly, x='month_plot', y=col, label=col)
+
+plt.title('Waste Tonnage by Category Over Time')
+plt.xlabel('Year')
+plt.ylabel('Tonnage Collected')
+plt.xticks(rotation=45)
+plt.legend(title='Waste Category', loc='upper left', bbox_to_anchor=(1, 1))
+plt.show()
+
+waste_monthly_avg = (
+    df
+    .groupby('month_num')[waste_cols]
+    .mean()
+    .reset_index()
+)
+
+waste_monthly_avg_melted = waste_monthly_avg.melt(
+    id_vars='month_num',
+    value_vars=waste_cols,
+    var_name='Waste_Category',
+    value_name='Average_Tons'
+)
+
+plt.figure(figsize=(12, 8))
+sns.barplot(data=waste_monthly_avg_melted, x='month_num', y='Average_Tons', hue='Waste_Category')
+plt.title('Average Monthly Waste Tonnage by Category (All Years)')
+plt.xlabel('Month')
+plt.ylabel('Average Tonnage Collected')
+plt.xticks(ticks=range(0, 12), labels=['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],)
+plt.legend(title='Waste Category', loc='upper left', bbox_to_anchor=(1, 1))
+plt.tight_layout()
+plt.show()
+
+correlation_data = city_monthly[waste_cols + ['Population']]
+correlation_matrix = correlation_data.corr()
+
+plt.figure(figsize=(10, 8))
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f", linewidths=.5)
+plt.title('Correlation Matrix of Waste Categories and Population')
+plt.show()
+
+"""**Machine Learning**"""
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import RobustScaler, OneHotEncoder
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error
+from sklearn.model_selection import RandomizedSearchCV, cross_val_score
+import numpy as np
+import matplotlib.pyplot as plt
+
+city_monthly['total_tonnage'] = city_monthly[waste_cols].sum(axis=1) # create a 'total_tonnage' varibale to sum up all waste categories
+
+# drop target variable and the additional variable created for visualisations
+columns_to_drop = [
+    'total_tonnage',
+    'month_plot'
+]
+
+X = city_monthly.drop(columns=columns_to_drop, axis=1) # features
+y = city_monthly['total_tonnage'] # target
+
+# Split the data into 80% training and 20% testing
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=0.2,
+    random_state=42
+)
+
+numeric_cols = X.select_dtypes(include=['int64','float64']).columns
+categorical_cols = X.select_dtypes(include=['object','category']).columns
+
+scaler = RobustScaler() # scaling of numeric feautres to reduce effect of outliers
+X_train_numeric = scaler.fit_transform(X_train[numeric_cols])
+X_test_numeric  = scaler.transform(X_test[numeric_cols])
+
+encoder = OneHotEncoder(sparse_output=False, handle_unknown='ignore') # one hot encoding for categorical features
+X_train_categorical = encoder.fit_transform(X_train[categorical_cols])
+X_test_categorical  = encoder.transform(X_test[categorical_cols])
+
+# Combine the processed features
+X_train_processed = np.hstack([X_train_numeric, X_train_categorical])
+X_test_processed = np.hstack([X_test_numeric,  X_test_categorical])
+
+"""**Linear Regression**"""
+
+# Initialise and train the model
+lr = LinearRegression()
+lr.fit(X_train_processed, y_train)
+
+# Predict y when given the test set (X_test)
+y_pred_lr = lr.predict(X_test_processed)
+
+# Evaluation metrics for Linear Regression
+print("MSE:", mean_squared_error(y_test, y_pred_lr))
+print("R²:",  r2_score(y_test, y_pred_lr))
+print("RMSE:", np.sqrt(mean_squared_error(y_test, y_pred_lr)))
+print("MAE:", mean_absolute_error(y_test, y_pred_lr))
+
+np.set_printoptions(precision=2)
+print(np.concatenate((y_pred_lr.reshape(len(y_pred_lr),1), y_test.values.reshape(len(y_test),1)),1))
+
+# Scatter plot to visualise the actual vs. predicted values
+plt.figure()
+plt.scatter(y_test, y_pred_lr, alpha=0.5)
+
+min_val = min(y_test.min(), y_pred_lr.min())
+max_val = max(y_test.max(), y_pred_lr.max())
+plt.plot([min_val, max_val], [min_val, max_val], linestyle='--')
+plt.xlabel('Actual tonnage')
+plt.ylabel('Predicted tonnage')
+plt.title('Actual vs Predicted using Linear Regression (Test set)')
+plt.show()
+
+# Residuals Distribution Plot for Linear Regression
+residuals = y_test - y_pred_lr
+plt.figure(figsize=(8, 6))
+sns.histplot(residuals, kde=True)
+plt.title('Distribution of Residuals using Linear Regression')
+plt.xlabel('Residuals')
+plt.ylabel('Frequency')
+plt.show()
+
+# Cross-Validation for Linear Regression
+cv_scores_lr = cross_val_score(lr, X_train_processed, y_train, cv=5, scoring='r2')
+print("Linear Regression CV R² Scores:", cv_scores_lr)
+
+"""**Random Forest**"""
+
+# Initialise and train the model
+rf = RandomForestRegressor(random_state=42)
+rf.fit(X_train_processed, y_train)
+
+# Grid of hyperparameter tuning for Random Forest
+param_grid_rf = {
+    'n_estimators': [50, 100, 150, 200, 500, 1000],
+    'max_depth': [None, 10, 15, 20, 25],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 5, 10],
+    'max_features': ['sqrt', 'log2']
+}
+# RandomizedSearchCV to find the best hyperparameter
+grid_search_rf = RandomizedSearchCV(estimator=rf,
+                              param_distributions=param_grid_rf,
+                              cv=5,
+                              scoring='r2',
+                              n_jobs=-1)
+
+grid_search_rf.fit(X_train_processed, y_train) # fit on the training data to find best parameters
+
+print("Best hyperparameters for Random Forest:", grid_search_rf.best_params_)
+print("Best cross-validation R² score:", grid_search_rf.best_score_)
+best_rf_model = grid_search_rf.best_estimator_
+
+# Evaluation Metrics for Random Forest
+y_pred_best_rf = best_rf_model.predict(X_test_processed)
+test_mse_best_rf = mean_squared_error(y_test, y_pred_best_rf)
+test_r2_best_rf = r2_score(y_test, y_pred_best_rf)
+test_rmse_best_rf = np.sqrt(test_mse_best_rf)
+test_mae_best_rf = mean_absolute_error(y_test, y_pred_best_rf)
+
+print("Test MSE:", test_mse_best_rf)
+print("Test R²:",  test_r2_best_rf)
+print("Test RMSE:", test_rmse_best_rf)
+print("Test MAE:", test_mae_best_rf)
+
+y_pred_rf = rf.predict(X_test_processed)
+print(np.concatenate((y_pred_best_rf.reshape(len(y_pred_best_rf),1), y_test.values.reshape(len(y_test),1)),1))
+
+# Scatter plot to visualise the actual vs. predicted values in Random Forest
+plt.figure()
+plt.scatter(y_test, y_pred_best_rf, alpha=0.5)
+min_val = min(y_test.min(), y_pred_best_rf.min())
+max_val = max(y_test.max(), y_pred_best_rf.max())
+plt.plot([min_val, max_val], [min_val, max_val], linestyle='--')
+plt.xlabel('Actual tonnage')
+plt.ylabel('Predicted tonnage')
+plt.title('Actual vs Predicted using Random Forest (Test set)')
+plt.show()
+
+# Cross-Validation for Random Forest
+cv_scores_rf = cross_val_score(rf, X_train_processed, y_train, cv=5, scoring='r2')
+print("Random Forest CV R² Scores:", cv_scores_rf)
+
+# Residuals Distribution Plot for Random Forest
+resid_rf = y_test - y_pred_rf
+
+plt.figure()
+plt.hist(resid_rf, bins=30, alpha=0.5)
+plt.xlabel('Residuals')
+plt.ylabel('Count')
+plt.title('Residuals Distribution Comparison when using Random Forest')
+plt.legend()
+plt.show()
+
+"""**XG Boosting**"""
+
+!pip install xgboost
+from xgboost import XGBRegressor
+
+xgb = XGBRegressor(random_state=42) # Initialise XGBRegressor model
+
+# Hyperparameter tuning for XG Boosting
+param_grid = {
+    'n_estimators': [50, 100, 200, 500, 1000],
+    'max_depth': [None, 10, 15, 20, 25],
+    'learning_rate': [0.01, 0.1, 0.2],
+    'subsample': [0.6, 0.8, 1.0],
+    'colsample_bytree': [0.6, 0.8, 1.0],
+    'gamma': [0, 1, 5]
+}
+# RandomizedSearchCV to find the best parameter grid
+grid_search_xgb = RandomizedSearchCV(
+    estimator=xgb,
+    param_distributions=param_grid,
+    cv=5, #5-fold cross-validation
+    scoring='r2', # Using R² as the evaluation metric
+    n_jobs=-1,
+    verbose=1
+)
+grid_search_xgb.fit(X_train_processed, y_train) # fit hyperparameter on the grid found
+
+print("Best hyperparameters for XGB:", grid_search_xgb.best_params_)
+print("Best cross-validation R² score:", grid_search_xgb.best_score_)
+best_xgb_model = grid_search_xgb.best_estimator_
+
+y_pred_best_xgb = best_xgb_model.predict(X_test_processed) # predict on the test set using the tuned XGBoost model
+
+# XGB Evaluation Metrics
+test_mse_best_xgb = mean_squared_error(y_test, y_pred_best_xgb)
+test_r2_best_xgb = r2_score(y_test, y_pred_best_xgb)
+test_rmse_best_xgb = np.sqrt(test_mse_best_xgb)
+test_mae_best_xgb = mean_absolute_error(y_test, y_pred_best_xgb)
+
+print("Test MSE:", test_mse_best_xgb)
+print("Test R²:",  test_r2_best_xgb)
+print("Test RMSE:", test_rmse_best_xgb)
+print("Test MAE:", test_mae_best_xgb)
+
+print(np.concatenate((y_pred_best_xgb.reshape(len(y_pred_best_xgb),1), y_test.values.reshape(len(y_test),1)),1))
+
+# Scatter plot for the XGBoost model's predictions (Actual vs. Predicted)
+plt.figure()
+plt.scatter(y_test, y_pred_best_xgb, alpha=0.5)
+min_val = min(y_test.min(), y_pred_best_xgb.min())
+max_val = max(y_test.max(), y_pred_best_xgb.max())
+plt.plot([min_val, max_val], [min_val, max_val], linestyle='--')
+plt.xlabel('Actual tonnage')
+plt.ylabel('Predicted tonnage')
+plt.title('Actual vs Predicted when using XGBoost(Test set)')
+plt.show()
+
+# Residuals Distribution Plot for XG Boost
+resid_xgb = y_test - y_pred_best_xgb
+
+plt.figure()
+plt.hist(resid_xgb, bins=30, alpha=0.5)
+plt.xlabel('Residuals')
+plt.ylabel('Count')
+plt.title('Residuals Distribution when using XGBoost')
+plt.legend()
+plt.show()
+
+# Cross-Validation for XG Boost
+cv_scores_xgb = cross_val_score(xgb, X_train_processed, y_train, cv=5, scoring='r2')
+print("XGB CV R² Scores:", cv_scores_xgb)
+
+"""**Comparison of** **Models**"""
+
+# Model Performance Comparison Table
+mse_lr = mean_squared_error(y_test, y_pred_lr)
+rmse_lr = np.sqrt(mse_lr)
+mae_lr = mean_absolute_error(y_test, y_pred_lr)
+r2_lr = r2_score(y_test, y_pred_lr)
+
+mse_rf = mean_squared_error(y_test, y_pred_best_rf)
+rmse_rf = np.sqrt(mse_rf)
+mae_rf = mean_absolute_error(y_test, y_pred_best_rf)
+r2_rf = r2_score(y_test, y_pred_best_rf)
+
+mse_xgb = mean_squared_error(y_test, y_pred_best_xgb)
+rmse_xgb = np.sqrt(mse_xgb)
+mae_xgb = mean_absolute_error(y_test, y_pred_best_xgb)
+r2_xgb = r2_score(y_test, y_pred_best_xgb)
+
+results = pd.DataFrame({
+    'Model': ['LinearRegression', 'RandomForest', "XGBoost"],
+    'Test MSE': [mse_lr, mse_rf, mse_xgb],
+    'Test RMSE': [rmse_lr, rmse_rf, rmse_xgb],
+    'Test MAE': [mae_lr, mae_rf, mae_xgb],
+    'Test R²': [r2_lr, r2_rf, r2_xgb]
+})
+print(results)
+
+# Combined Residuals Distribution Plot
+resid_lr = y_test - y_pred_lr
+resid_rf = y_test - y_pred_best_rf
+resid_xgb = y_test - y_pred_best_xgb
+plt.figure()
+plt.hist(resid_lr, bins=30, alpha=0.5, label='Linear Regression')
+plt.hist(resid_rf, bins=30, alpha=0.5, label='Random Forest')
+plt.hist(resid_xgb, bins=30, alpha=0.5, label='XG Boost')
+plt.xlabel('Residual')
+plt.ylabel('Count')
+plt.title('Residuals Distribution Comparison')
+plt.legend()
+plt.show()
